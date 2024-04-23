@@ -1,0 +1,28 @@
+<app-header [bkButton]="false"></app-header>
+
+<ion-content fullscreen="true">
+    <div class="ion-text-center">
+        <img src="../../../assets/img/mobe.svg" height="300px" alt="">
+    </div>
+    
+    <div style="margin-bottom: 50px; text-align: center; padding-bottom: 10px;">
+      <app-page-title [show]="false" [title]="title" class="title"></app-page-title>
+    </div>
+    
+    <ion-button *ngFor="let page of pages" [routerLink]="page.redirectTo" expand="block" color="white">
+      <div class="text_left">
+        <ion-icon slot="start" [name]="page.icon"></ion-icon>
+        {{page.name | titlecase}}
+      </div>
+    </ion-button>
+
+    <!--<ion-list>
+      <ion-item *ngFor="let page of pages" [routerLink]="page.redirectTo" detail>
+        <ion-icon slot="start" [name]="page.icon" color="primary"></ion-icon>
+        {{page.name | titlecase}}
+      </ion-item>
+    </ion-list>-->
+
+</ion-content>
+
+<app-footer></app-footer>

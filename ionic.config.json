@@ -1,0 +1,8 @@
+{
+  "name": "mobe",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

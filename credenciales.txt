@@ -1,0 +1,3 @@
+Key Alias: mobe-key
+Key Store Password: mobe1234
+Key Password: mobe1234
